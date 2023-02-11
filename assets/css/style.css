@@ -130,6 +130,40 @@ footer {
     }
 }
 
+/* About Section */
+
+.about-section {
+    display: flex;
+    margin-top: 50px;
+}
+  
+.about-img {
+    width: 50%;
+}
+  
+.about-img img {
+    width: 100%;
+}
+  
+.about-text {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.about-text {
+    padding: 50px;
+}
+
+/* Tinies Section */
+
+.tinies-section {
+    column-count: 4;
+    column-gap: 1px;    
+}
+.tinies-section img {
+    width: 40%;   
+}
 
 /* Amenities Section */
 
@@ -140,14 +174,20 @@ footer {
     background-color: lightgrey;
 }
 
-.amenities-title {
+.title {
     margin-top: 50px;
     margin-bottom: 10px;
+    padding-top: 50px;
     text-align: center;
 }
-.amenities-inside h3 {    
-    margin-top: 10px;
+#amenities-inside h3 {    
+    margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
+}
+#amenities-outside h3 {    
+    padding-top: 50px;
+    margin: 0 0 50px;
     text-align: center;
 }
   
@@ -169,24 +209,5 @@ footer {
     } 
 }
   
-/* About Section */
 
-.about-section {
-    display: flex;
-    margin-top: 50px;
-}
-  
-.about-img {
-    width: 50%;
-}
-  
-.about-img img {
-    width: 100%;
-}
-  
-.about-text {
-    width: 50%;
-    padding: 20px;
-    text-align: justify;
-}
   
