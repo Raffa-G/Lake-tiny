@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald&family=Quicksand:wght@600&family=Reenie+Beanie&display=swap');
 
 body {
-    margin: 0 20px;
+    margin: 20px;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 16px;
@@ -188,13 +188,14 @@ br {
 
 #amenities-inside {
     background-color: wheat;
+    margin-top: 50px;
 }
 #amenities-outside {
     background-color: wheat;
+    margin-bottom: 50px;
 }
 
 .title {
-    margin-top: 50px;
     margin-bottom: 10px;
     padding-top: 50px;
     text-align: center;
@@ -208,7 +209,7 @@ br {
   
 .amenities-div {
     width: calc(24% - 15px);
-    display: inline-grid;
+    display: inline-grid; 
 } 
 .amenities-div h4 {
     text-align: center;
@@ -220,6 +221,7 @@ br {
 .amenities-div img {
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 5%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -228,6 +230,55 @@ br {
         text-align: center;
         display: inline-grid;
     } 
+}
+.outside-section div {
+    text-align: center;
+}
+/* Contact section */
+
+.contact-section {
+    background-color: rgb(232, 247, 169);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.contact-section div {
+    text-align: end;
+}
+
+#form-div {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+input[type=text], input[type=email], textarea {
+    border: none;
+    width: 600px;
+    font-family: inherit;
+    resize: vertical;
+}
+#message-field {
+    height: 150px;
+      
+}
+#button {
+    background-color: #437050;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    font-family: inherit;
+    border: none;
+    color: white;
+}
+#button:hover {
+    background-color: wheat;
+    color: #437050;
+    border: 1px solid #437050;
+    cursor: pointer;
 }
 
 /* Tinies Section */

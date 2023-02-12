@@ -44,6 +44,8 @@
         For the rest of your stay you can still have it upon request.
         <br>The hot summer days invite you for a dip in the beautifull green lake, 20 meter away from our Tiny Houses.
         <br>And if the winter weather stops you from that epic sweem, each Tiny has an amazing private tub where you can enjoy a hot bath outside.
+        <br>There is also an outside extra large high ceilling tent, that can be closed or left open, intended to be shared by all the guestes in LAKE TINY,
+        with different gathering areas like a coffe bar, a big dinner table, two seating areas, many books and board games for you to get social.
       </p>
     </div>
   </section>
@@ -54,17 +56,15 @@
     <h3>To enjoy inside</h3>
     <div class="amenities-div">
       <img src="assets/images/amen-inside-1.jpg" alt="">
-      <h4><i class="fa-light fa-kitchen-set"></i>KITCHEN</h4>
-      <p>Sink</p>
-      <p>Stove</p>
-      <p>Frige</p>
-      <p>Micro-wave</p>
+      <h4><i class="fa-light fa-kitchen-set"></i> KITCHEN</h4>
+      <p>Sink and Frige</p>
+      <p>Stove and Micro-wave oven</p>
       <p>Utencils</p>
 
     </div>
     <div class="amenities-div">
       <img src="assets/images/amen-inside-2.jpg" alt="">
-      <h4><i class="fa-light fa-fire-burner"></i>HEATING and SECURITY</h4>
+      <h4><i class="fa-light fa-fire-burner"></i> HEATING and SECURITY</h4>
       <p>Wood burner</p>
       <p>Air purifier</p>
       <p>Carbon monoxide sensor</p>
@@ -79,29 +79,63 @@
       <div class="amenities-div">
         <img src="assets/images/amen-inside-4.jpg" alt="">
         <h4><i class="fa-light fa-baby-carriage"></i> KIDS/BABY EQUIPMENT</h4>
+        <P>Apon request:</P>
         <P>Crib or small bed</P>
         <P>Wood toys and books</P>
       </div>
     </section>
     
-    <section id="amenities-outside">
+    <section class="outside-section" id="amenities-outside">
       <h3>To enjoy outside</h3>
       <div class="amenities-div">
         <img src="assets/images/amen-outside-1.jpg" alt="">
-        <p><i class="fa-duotone fa-hot-tub-person"></i> OUTDOOR HOT TUB</p>
+        <h4><i class="fa-duotone fa-hot-tub-person"></i> OUTDOOR HOT TUB</h4>
       </div>
       <div class="amenities-div">
         <img src="assets/images/amen-outside-2.jpg" alt="">
-        <p><i class="fa-duotone fa-fire"></i> GLAM CAMP FIRE</p>
+        <h4><i class="fa-duotone fa-fire"></i> GLAM CAMP FIRE</h4>
       </div>
       <div class="amenities-div">
           <img src="assets/images/amen-outside-3.jpg" alt="">
-          <p><i class="fa-duotone fa-sailboat"></i> BOATS</p>
+          <h4><i class="fa-duotone fa-sailboat"></i> BOATS</h4>
         </div>
         <div class="amenities-div">
           <img src="assets/images/amen-outside-4.jpg" alt="">
-          <p><i class="fa-duotone fa-people-roof"></i> COMMUNITY SPACES</p>
+          <h4><i class="fa-duotone fa-people-roof"></i> COMMUNITY SPACES</h4>
         </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2>Contact us</h2>
+        
+        <div id="form-div">
+          <form action="thank-you.html" method="get">
+            <div>
+                <label for="name-field">Name</label>
+                <input id="name-field" type="text" name="full-name" placeholder="Your name" required>
+            </div>
+            <div>
+                <label for="email-field">Email</label>
+                <input type="email" name="email" id="email-field" placeholder="Your email" required>
+            </div>
+            <div>
+              <label for="subject-field">Subject</label>
+              <input id="subject-field" type="text" name="subject" placeholder="Availability request" required>
+           </div>
+           <div>
+            <label for="message-field">Message</label>
+            <textarea id="message-field" name="message" required>Your message</textarea>
+           </div>
+            <br>
+           <div>
+               <input type="submit" value="Send" id="button">
+           </div>
+        </div>
+        </form>   
+
+        </div>
+
       </section>
     
       </main>
