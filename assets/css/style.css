@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald&family=Quicksand:wght@600&family=Reenie+Beanie&display=swap');
+
 body {
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 20px;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-weight: 100;
     font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: Oswald, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 /* header and footer */
@@ -9,6 +18,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
+    height: 100px;
     padding: 20px;
 }
 
@@ -19,19 +29,24 @@ header {
 }
 
 .logo {
-    width: 40%;
-}
-#logo-img {
-    width: inherit;
+    height: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+.logo img a {
+    height: 100px;
+   
+}
+#logo-img {
+    height: 100px;
 }
 nav {
     width: 60%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
 }
 nav ul {
     list-style: none;
@@ -40,23 +55,27 @@ nav ul {
     display: inherit;
 }
 nav a {
-    color: #fff;
+    color: rgb(232, 247, 169);
     text-decoration: none;
 }
 nav a:hover {
-    color: rgb(79, 150, 117);
+    color: wheat;
+    border: 1px solid;
+    border-color: wheat;
 }
 nav li {
-    font-size: 150%;
+    font-size: 120%;
     padding-left: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 /* footer */
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: rgb(232, 247, 169);
     padding: 20px;
     text-align: center;
 }
@@ -68,13 +87,13 @@ footer {
     display: inline-block;
 }
 .social-links a {
-    color: #fff;
+    color: rgb(232, 247, 169);
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
 }
 .social-links a:hover {
-    color: rgb(79, 150, 117);
+    color: wheat;
 }
 
 /* media queries */
@@ -116,7 +135,10 @@ footer {
 }
   
 .hero-text {
-    font-size: 500%;
+    font-family: Oswald, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 600%;
+    font-weight: 900;
+    letter-spacing: 5px;
     text-align: left;
     color: rgba(232, 247, 169, 0.6);
 }
@@ -136,13 +158,20 @@ footer {
     display: flex;
     margin-top: 50px;
 }
-  
+
+.about-section p {
+    padding: 40px;
+}
+br {
+    padding: 5px;
+}  
 .about-img {
     width: 50%;
 }
   
 .about-img img {
     width: 100%;
+    border-radius: 50%;
 }
   
 .about-text {
@@ -155,23 +184,13 @@ footer {
     padding: 50px;
 }
 
-/* Tinies Section */
-
-.tinies-section {
-    column-count: 4;
-    column-gap: 1px;    
-}
-.tinies-section img {
-    width: 40%;   
-}
-
 /* Amenities Section */
 
 #amenities-inside {
-    background-color: lightgrey;
+    background-color: wheat;
 }
 #amenities-outside {
-    background-color: lightgrey;
+    background-color: wheat;
 }
 
 .title {
@@ -180,11 +199,7 @@ footer {
     padding-top: 50px;
     text-align: center;
 }
-#amenities-inside h3 {    
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-}
+
 #amenities-outside h3 {    
     padding-top: 50px;
     margin: 0 0 50px;
@@ -193,16 +208,45 @@ footer {
   
 .amenities-div {
     width: calc(24% - 15px);
-    text-align: center;
     display: inline-grid;
 } 
+.amenities-div h4 {
+    text-align: center;
+}
+.amenities-div p {
+    margin: 0;
+    text-align: center;
+}
 .amenities-div img {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
     .amenities-div {
+        width: 100%;
+        text-align: center;
+        display: inline-grid;
+    } 
+}
+
+/* Tinies Section */
+
+.tinies-div {
+    width: calc(24% - 15px);
+    text-align: center;
+    display: inline-grid;   
+}
+.tinies-div img {
+    width: 100%;
+    margin-bottom: 20px;   
+}
+.gallery-div {
+    column-count: 3;
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery-div {
         width: 100%;
         text-align: center;
         display: inline-grid;
