@@ -13,6 +13,12 @@ h1, h2, h3 {
     text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+}
+
 /* header and footer */
 /* header */
 header {
@@ -64,11 +70,12 @@ nav a:hover {
     border-color: wheat;
 }
 nav li {
-    font-size: 120%;
+    font-size: 80%;
     padding-left: 20px;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* footer */
@@ -104,20 +111,31 @@ footer {
     .header-container {
         flex-direction: column;
         align-items: center;
-      }
+        height: 90%;
+    }
+    header {
+        padding: 20px 20px 0px;
+    }
 
     .logo {
-        width: 100%;
+        width: 80%;
         text-align: center;
-        margin-bottom: 20px;
+    }
+    #logo-img {
+        width: 90%;
+        height: 90%;
+        padding: 0;
+        margin: 0;
     }
     
     nav {
         width: 100%;
+        padding-bottom: 0;
     }
     nav li {
-        font-size: 110%;
-        padding-left: 20px;
+        font-size: 60%;
+        padding-left: 10px;
+        padding-right: 10px;
         letter-spacing: 2px;
     }
 }
@@ -146,11 +164,11 @@ footer {
 /* media queries */
 
 @media only screen and (max-width: 767px) {
-    .hero-text {
-        font-size: 350%;
-        text-align: center;
+    .hero-section {
+        height: 250px;
     }
 }
+
 
 /* About Section */
 
@@ -176,12 +194,39 @@ br {
   
 .about-text {
     width: 50%;
-    padding: 20px;
+    padding: 50px;
     text-align: justify;
 }
 
-.about-text {
-    padding: 50px;
+.title {
+    margin-bottom: 10px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 767px) {
+    .about-section {
+        display: flex;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-img {
+        width: 80%
+    }
+    .about-text {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 80%;
+    }
+    .title {
+        padding-top: 10;
+    }
+    .about-section p {
+        padding: 0;
+    }
 }
 
 /* Amenities Section */
@@ -192,19 +237,23 @@ br {
 }
 #amenities-outside {
     background-color: wheat;
+    padding-bottom: 50px;
     margin-bottom: 50px;
-}
-
-.title {
-    margin-bottom: 10px;
-    padding-top: 50px;
-    text-align: center;
 }
 
 #amenities-outside h3 {    
     padding-top: 50px;
-    margin: 0 0 50px;
+    margin: 0 0 20px;
     text-align: center;
+}
+
+#inside {
+    display: flex;
+    justify-content: space-evenly;
+}
+#outside {
+    display: flex;
+    justify-content: space-evenly;
 }
   
 .amenities-div {
@@ -213,6 +262,7 @@ br {
 } 
 .amenities-div h4 {
     text-align: center;
+    margin-top: 0;
 }
 .amenities-div p {
     margin: 0;
@@ -220,25 +270,37 @@ br {
 }
 .amenities-div img {
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 5%;
 }
 
-@media only screen and (max-width: 767px) {
-    .amenities-div {
-        width: 100%;
-        text-align: center;
-        display: inline-grid;
-    } 
-}
 .outside-section div {
     text-align: center;
 }
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+
+.amenities-div {
+        width: calc(90% - 20px);
+    }
+    #inside {
+        flex-wrap: wrap;
+    }
+    #outside {
+        flex-wrap: wrap;
+    }
+    .amenities-div h4 {
+        padding-top: 0;
+    }
+}
+
 /* Contact section */
 
 .contact-section {
     background-color: rgb(232, 247, 169);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 50px;
 }
 .contact-section div {
@@ -248,40 +310,67 @@ br {
 #form-div {
     display: flex;
     justify-content: center;
+    padding-right: 70px;
 }
 
 label {
-    padding: 12px 12px 12px 0;
+    padding: 10px 10px 10px 0;
     display: inline-block;
     margin-bottom: 5px;
 }
 input[type=text], input[type=email], textarea {
     border: none;
-    width: 600px;
+    height: 25px;
+    width: 500px;
     font-family: inherit;
     resize: vertical;
+
+}
+textarea {
+    align-self: flex-end;
 }
 #message-field {
-    height: 150px;
+    height: 100px;
+    padding-top: 0;
+    padding-bottom: 10px;
       
 }
 #button {
-    background-color: #437050;
+    background-color: #5c9b6e;
     height: 50px;
     width: 50px;
     border-radius: 20%;
     font-family: inherit;
     border: none;
     color: white;
+    margin-top: 10px;
 }
 #button:hover {
     background-color: wheat;
-    color: #437050;
-    border: 1px solid #437050;
+    color: #5c9b6e;
+    border: 1px solid #5c9b6e;
     cursor: pointer;
 }
 
-/* Tinies Section */
+/* media queries */
+@media only screen and (max-width: 767px) {
+    input[type=text], input[type=email], textarea {
+        width: 300px;
+    }
+    #form-div {
+        padding-right: 0px;
+    }
+    .contact-section div {
+        
+    }
+    #button {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+
+/* Tinies page */
 
 .tinies-div {
     width: calc(24% - 15px);

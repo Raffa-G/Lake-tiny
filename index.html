@@ -16,7 +16,7 @@
           <nav>
             <ul>
               <li><a href="index.html#about">About</a></li>
-              <li><a href="our-tinies.html">Our Tinies</a></li>
+              <li><a href="our-tinies.html">Tinies</a></li>
               <li><a href="index.html#amenities-inside">Amenities</a></li>
               <li><a href="index.html#contacts">Contact us</a></li>
             </ul>
@@ -54,6 +54,7 @@
   <section id="amenities-inside">
     <h2 class="title">Amenities</h2>
     <h3>To enjoy inside</h3>
+  <div id="inside">
     <div class="amenities-div">
       <img src="assets/images/amen-inside-1.jpg" alt="">
       <h4><i class="fa-light fa-kitchen-set"></i> KITCHEN</h4>
@@ -83,10 +84,12 @@
         <P>Crib or small bed</P>
         <P>Wood toys and books</P>
       </div>
+    </div>
     </section>
     
     <section class="outside-section" id="amenities-outside">
       <h3>To enjoy outside</h3>
+      <div id="outside">
       <div class="amenities-div">
         <img src="assets/images/amen-outside-1.jpg" alt="">
         <h4><i class="fa-duotone fa-hot-tub-person"></i> OUTDOOR HOT TUB</h4>
@@ -102,6 +105,7 @@
         <div class="amenities-div">
           <img src="assets/images/amen-outside-4.jpg" alt="">
           <h4><i class="fa-duotone fa-people-roof"></i> COMMUNITY SPACES</h4>
+        </div>
         </div>
       </section>
 
@@ -124,10 +128,9 @@
               <input id="subject-field" type="text" name="subject" placeholder="Availability request" required>
            </div>
            <div>
-            <label for="message-field">Message</label>
+            <label for="message-field"></label>
             <textarea id="message-field" name="message" required>Your message</textarea>
            </div>
-            <br>
            <div>
                <input type="submit" value="Send" id="button">
            </div>
